@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+body {
+    color:hsl(43, 9%, 16%)
+}
+   
+    
+
+table{
+    border: 1px solid #000000;
+}
+th {
+    border: 1px double #000000;
+}
+td{
+    border: 1px dashed #000000;
+}
+
+#month {
+    background-color: rgb(164, 237, 247);
+}
+#event {
+    background-color: rgb(245, 180, 207);
+}
+#action {
+    background-color: rgb(247, 244, 234);
+}
+
+img{
+    height: 25%;
+    width: 25%;
+}
+
+a:link{
+    color:#272bf7
+}
+a:visited{
+    color:cornflowerblue
+}
+
+

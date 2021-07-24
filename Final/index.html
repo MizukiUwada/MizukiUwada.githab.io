@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+    
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="CSS/final_css.css">
+        <meta name="author" content="Mizuki UWADA"  />
+        <meta name="keywords" content="broadcasting,soka,club"> 
+        <title>創価大学放送部</title>
+    </head>
+
+    <body>
+        <header>          
+            <h1>放送部へようこそ！！</h1>  
+            <p>こちらは創価大学放送部(Soka Broadcasting System)の非公式ホームページです。</p>
+            <nav>
+                <h2>News</h2>
+                    <p>最新情報はこちらからCheck!!</p>
+                    <ul>
+                        <li><a href="https://twitter.com/sbs_net">twitter</a></li>
+                        <li><a href="https://www.instagram.com/su_broadcast_/">instagram</a></li>                        
+                    </ul>    
+            </nav>
+        </header>
+        
+        <div>
+            <div>
+                <h2>放送部ってどんなサークル？</h2>
+                <p>一口に放送と言っても実はいろいろなことをしているんです！主な活動を紹介します！！</p>
+                <dl>
+                    <dt>音響</dt>
+                    <dd>イベントで音を大きく・聞きやすくして、聞いている方々に届けます。</dd>
+                    <dt>読み</dt>
+                    <dd>情報を声を使って届けます。主にニュースを届けたり、司会進行を行う「アナウンス」と、物語を表現する「朗読」があります。</dd>
+                    <dt>作品</dt>
+                    <dd>ラジオ番組や映像作品を制作します。</dd>
+                </dl>
+                <div>
+                    <h3>サークルを探しているあなた！！放送部の活動を体験してみましょう！！</h3>
+                    <p>選択肢を選ぶと、あなたにどの活動がおすすめか表示します。</p>
+                    <div>
+                        <button type="button" onclick="work_type(0)">自分は裏方気質！自分の働きでステージが成功したときの達成感はサイコー！！</button>
+                        <button type="button" onclick="work_type(1)">一発勝負に自信あり。自分の声と言葉で表現したい！！</button>
+                        <button type="button" onclick="work_type(2)">映像や音にとことんこだわりたい！！色々な技を駆使してみたい！</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div>
+                <h2>年間の予定</h2>
+                <table border="1" >
+                    <tr>
+                        <td id = month>月</td>
+                        <td>4月</td>
+                        <td>5月</td>
+                        <td>6月</td>
+                        <td>7月</td>
+                        <td>8月</td>
+                        <td>9月</td>
+                        <td>10月</td>
+                        <td>11月</td>
+                        <td>12月</td>
+                        <td>1月</td>
+                        <td>2月</td>
+                        <td>3月</td>
+                    </tr>
+                    <tr>
+                        <td id = event >イベント</td>
+                        <td>入学式</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>創大祭</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>卒業式</td>
+                    </tr>
+                    <tr>
+                        <td id = action >活動内容</td>
+                        <td colspan="2">新歓※入部は1年中募集！！</td>
+                        <td></td>
+                        <td></td>
+                        <td>夏合宿</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>冬合宿</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <img src="素材/radio.pic" width="400" alt="マイク">
+            </div>
+            <div>
+                <h2>音響・アナウンスのご依頼フォーム</h2>
+                <p>お仕事の依頼はこちらから！！</p>
+                <ul>
+                    <form action="#" method="POST">
+                        <li>お名前</li>                            
+                        <div>
+                            <label for="last-name">姓：
+                                <input type="text" name="lastname" id="last-name" placeholder="ここには姓を入れてください" required>
+                            </label>
+                            <label for="first-name">名：
+                                <input type="text" name="firstname" id="first-name" placeholder="ここには名を入れてください" required>
+                            </label>
+                            </div>
+                        <li>ご連絡先</li>
+                        <div>
+                            <label>電話番号：<input type="tel"></label>
+                        </div>
+                        <div>
+                            <label>メールアドレス：<input type="emali"></label>
+                        </div>
+                        <li>ご依頼の種類</li>
+                        <div>
+                            <label>
+                                <input type="radio" name="work_type" value="pa">
+                                音響のご依頼
+                            </label>
+                            <label>
+                                <input type="radio" name="work_type" value="announce">
+                                読みのご依頼
+                            </label>
+                            <label>
+                                <input type="radio" name="work_type" value="other">
+                                その他
+                            </label>
+                        </div>
+                        <li>ご希望の日時</li>
+                        <div>
+                            <label for="work_day">日時：</label>
+                            <input type="date" name="work_day" id="work_day">
+                        </div>
+                        <li>ご依頼の内容</li>
+                        <div>
+                            <label for="requests">ご要望：</label>
+                            <textarea name="requests" id="requests" cols="30" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <label>
+                                添付ファイル(計画書などありましたら添付してください):
+                                <input type="file">
+                            </label>
+                        </div>
+                        <li>会場の規模</li>
+                        <p>予測・予定集客数(10人~5000人)を入力してください。</p> 
+                        </div>
+                        <li>以上でよろしいでしょうか。ご確認の上☑ボタンをクリックしてください。</li>
+                        <div>
+                            <input type="checkbox" name="agreement" id="agreement" checked>
+                            <label for="agreement">この内容で依頼をします</label>
+                        </div>
+                        <li>よろしければ送信ボタンを押してください</li>
+                        <div>
+                            <input type="submit" value="送信する">
+                            <input type="reset" value="リセット">
+                        </div>
+                    </form>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            Copyright &copy; Mizuki UWADA, All Rights Reserved. 　
+        </footer>
+
+        <script src="Js/final_js.js"></script>
+
+    </body>
+    
+</html>
